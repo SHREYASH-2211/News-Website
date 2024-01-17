@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Webpage</title>
+</head>
+<body>
+
+    <nav>
+    <div class="main_nav container flex">
+        <a href="index.html" onclick="reload()"><img src ="Assest/logo.png" alt="logo png" width="160px" height="100px" title="company logo"></a>
+        <div class="nav_link">
+            <ul class="flex">
+            <!-- <li class="hover_link nav_items">Home</li> -->
+            <li class="hover_link nav_items" id="ipl" onclick="onNavItemClick('ipl')">Ipl</li>
+            <li class="hover_link nav_items" id="trip" onclick="onNavItemClick('trip')">Trip</li>
+            <li class="hover_link nav_items" id="technology" onclick="onNavItemClick('technology')">Technology</li>
+            <!-- <li class="hover_link nav_items" id="ai" onclick="onNavItemClick('ai')">AI</li> -->
+            <!-- <li class="hover_link nav_items" id="Ram Mandir" onclick="onNavItemClick('Ram Mandir')">Ram Mandir</li> -->
+        </ul>
+        </div>
+        <div class="search_bar">
+            <input type="text" class="news_column" id="search_text" placeholder="e.g. Ipl">
+            <button id="search_button" class="search_button">Search</button>
+        </div>
+    </div>
+    </nav>
+
+    <main>
+        <div class="card_container container flex " id="card_container">
+            
+            
+        </div>
+    </main>
+
+    <template id="template_news_card">
+        <div class="card">
+            <div class="card_header">
+                <img src="https://via.placeholder.com/400x200" alt="image" id="news_img">
+            </div>
+            <div class="card_content">
+                <h3 id="news_title">This is the Title</h3>
+                <h6 class="news_source" id="news_source">End Gadget 12/01/2024</h6>
+                <p class="news_desc" id="news_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa officia ducimus incidunt suscipit temporibus atque aliquam unde porro, quo vitae quia dolorem sequi deserunt fugiat consequatur hic corporis eum sint.</p>
+            </div>
+        </div>
+    </template>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</body>
+</html>
